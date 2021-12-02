@@ -127,6 +127,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/unist@npm:^2.0.0, @types/unist@npm:^2.0.2, @types/unist@npm:^2.0.3":
+  version: 2.0.6
+  resolution: "@types/unist@npm:2.0.6"
+  checksum: 25cb860ff10dde48b54622d58b23e66214211a61c84c0f15f88d38b61aa1b53d4d46e42b557924a93178c501c166aa37e28d7f6d994aba13d24685326272d5db
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -694,14 +701,17 @@ fsevents@~2.3.2:
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^1.0.0-next.30
     "@tsconfig/svelte": ^2.0.1
+    mdsvex: ^0.9.8
     prettier: ^2.5.0
     prettier-plugin-svelte: ^2.5.0
     svelte: ^3.44.2
+    svelte-as-markup-preprocessor: ^0.2.0
     svelte-check: ^2.2.10
     svelte-preprocess: ^4.9.8
+    svelte-trim: ^0.1.0
     tslib: ^2.3.1
     typescript: ^4.5.2
-    vite: ^2.6.14
+    vite: ^2.6.12
   languageName: unknown
   linkType: soft
 
@@ -998,6 +1008,20 @@ fsevents@~2.3.2:
     socks-proxy-agent: ^5.0.0
     ssri: ^8.0.0
   checksum: 326fefde1aec1f1314e548be74baaaa322208718d1b51c9688a326f73dea70f57767b4f5423230e39408cfe7c6dcf7adcf86ca4798c919c3ea78f54532910434
+  languageName: node
+  linkType: hard
+
+"mdsvex@npm:^0.9.8":
+  version: 0.9.8
+  resolution: "mdsvex@npm:0.9.8"
+  dependencies:
+    "@types/unist": ^2.0.3
+    prism-svelte: ^0.4.7
+    prismjs: ^1.17.1
+    vfile-message: ^2.0.4
+  peerDependencies:
+    svelte: 3.x
+  checksum: d19f18fed167542d479c85dfc575d10f50d02816d538f438bd30311b8ae5cbaac5927cfb19f3195b526bb6d60ed8081dbf9d88aba57dd560de1def4ddb5aa16c
   languageName: node
   linkType: hard
 
@@ -1307,6 +1331,20 @@ fsevents@~2.3.2:
   bin:
     prettier: bin-prettier.js
   checksum: aad1b35b73e7c14596d389d90977a83dad0db689ba5802a0ef319c357b7867f55b885db197972aa6a56c30f53088c9f8e0d7f7930ae074c275a4e9cbe091d21d
+  languageName: node
+  linkType: hard
+
+"prism-svelte@npm:^0.4.7":
+  version: 0.4.7
+  resolution: "prism-svelte@npm:0.4.7"
+  checksum: 7f3648ba67558eb510380587fecc511e903164f7c5eed856cbd16bbc00b144e1398eda84537f0e48cbc1a14cdb3835aba3a266f357848aa0e80f5b28d848d0b5
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.17.1":
+  version: 1.25.0
+  resolution: "prismjs@npm:1.25.0"
+  checksum: 04d8eae9d1b26b76c350bc65621584c8f8cab80ace7da3953f8aef2f9a8dd4b4f71c1d15bc5c67f126ddc90cd5af613919dc1340589a6c57355bed86fa3ac010
   languageName: node
   linkType: hard
 
@@ -1656,6 +1694,15 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
+"svelte-as-markup-preprocessor@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "svelte-as-markup-preprocessor@npm:0.2.0"
+  peerDependencies:
+    svelte: ^3.29
+  checksum: 06479cbeecab5bef560d9cbbe890985a59e4e4863c08ac797ace24b3af5844594f70277febfa2939fb80fa8c0d3f0f6a243ce48fe319e7a22ff080d103dfcd5d
+  languageName: node
+  linkType: hard
+
 "svelte-check@npm:^2.2.10":
   version: 2.2.10
   resolution: "svelte-check@npm:2.2.10"
@@ -1735,6 +1782,17 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
+"svelte-trim@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "svelte-trim@npm:0.1.0"
+  dependencies:
+    magic-string: ^0.25.7
+  peerDependencies:
+    svelte: ^3.29
+  checksum: 64f7a2b51ad42bad649cbcea405b0fec8897f9c18118939f6f57102dd22aa867695e1910b61ea8f2b2600315258f40b3ee4b74a5d161dc99b3909bbc3c896a35
+  languageName: node
+  linkType: hard
+
 "svelte@npm:^3.44.2":
   version: 3.44.2
   resolution: "svelte@npm:3.44.2"
@@ -1810,6 +1868,15 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
+"unist-util-stringify-position@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "unist-util-stringify-position@npm:2.0.3"
+  dependencies:
+    "@types/unist": ^2.0.2
+  checksum: f755cadc959f9074fe999578a1a242761296705a7fe87f333a37c00044de74ab4b184b3812989a57d4cd12211f0b14ad397b327c3a594c7af84361b1c25a7f09
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -1817,7 +1884,17 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.6.14":
+"vfile-message@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "vfile-message@npm:2.0.4"
+  dependencies:
+    "@types/unist": ^2.0.0
+    unist-util-stringify-position: ^2.0.0
+  checksum: 1bade499790f46ca5aba04bdce07a1e37c2636a8872e05cf32c26becc912826710b7eb063d30c5754fdfaeedc8a7658e78df10b3bc535c844890ec8a184f5643
+  languageName: node
+  linkType: hard
+
+"vite@npm:^2.6.12":
   version: 2.6.14
   resolution: "vite@npm:2.6.14"
   dependencies:
