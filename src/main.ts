@@ -11,6 +11,6 @@ function startApp() {
 	});
 }
 
-// window.engine ? engine.whenReady.then(() => startApp()) : startApp();
-startApp();
+window.engine ? engine.whenReady.then(() => startApp()) : startApp();
+
 export default app;
