@@ -1,0 +1,49 @@
+extends:
+  - stylelint-config-recommended
+  - stylelint-config-prettier
+  - stylelint-config-rational-order
+plugins:
+  - stylelint-order
+  - stylelint-config-rational-order/plugin
+syntax: scss
+rules:
+  string-quotes: single
+  no-duplicate-at-import-rules: true
+  no-duplicate-selectors:
+  max-nesting-depth: 3
+  at-rule-no-unknown:
+  color-no-invalid-hex: true
+  declaration-colon-space-before: never
+  media-feature-range-operator-space-before: never
+  media-feature-range-operator-space-after: never
+  media-feature-colon-space-before: never
+  no-descending-specificity:
+  font-family-no-missing-generic-family-keyword:
+  length-zero-no-unit: true
+  property-disallowed-list:
+    - alignment-baseline
+    - all
+    - backface-visibility
+    - background-attachment
+    - background-blend-mode
+    - background-clip
+    - background-origin
+    - background-position-x
+    - background-position-y
+    - background-repeat-x
+    - background-repeat-y
+    - buffered-rendering
+    - color-interpolation
+    - enable-background
+    - float
+    - "/^grid/"
+    - "/^marker/"
+    - object-fit
+  selector-pseudo-element-disallowed-list:
+    - before
+    - after
+  order/properties-order: []
+  plugin/rational-order:
+    - true
+    - border-in-box-model: true
+      empty-line-between-groups: true
